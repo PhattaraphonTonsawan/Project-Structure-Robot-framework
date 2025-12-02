@@ -1,13 +1,7 @@
 *** Settings ***
 Documentation     ทดสอบการเปลี่ยนรหัสผ่านผู้ใช้
 Library           SeleniumLibrary
-Resource          ../keywords/common.resource
-Resource          ../resources/global.resource
-Resource          ../keywords/login_test.resource
-Resource          ../keywords/changePass.resource
-Resource          ../resources/changePassword.resource
-Resource          ../resources/login.resource
-Resource          ../resources/UserProfile.resource
+Resource          ../resources/import.resource
 
 
 *** Test Cases ***

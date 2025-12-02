@@ -1,341 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-12-02T13:10:13.587393" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-12-02T14:12:00.068113" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot Learning" source="C:\Robot_Learning">
 <suite id="s1-s1" name="Test" source="C:\Robot_Learning\test">
 <suite id="s1-s1-s1" name="changePassword" source="C:\Robot_Learning\test\changePassword.robot">
-<test id="s1-s1-s1-t1" name="User Can Change Password" line="14">
+<test id="s1-s1-s1-t1" name="User Can Change Password" line="8">
 <kw name="Open Webpage" owner="common">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-02T13:10:13.799191" level="INFO">Opening browser 'chrome' to base url 'https://cssoften0368.cpkkuhost.com'.</msg>
+<msg time="2025-12-02T14:12:00.297938" level="INFO">Opening browser 'chrome' to base url 'https://cssoften0368.cpkkuhost.com'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-02T13:10:13.798880" elapsed="4.298706"/>
+<status status="PASS" start="2025-12-02T14:12:00.297644" elapsed="5.783114"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-02T13:10:18.097869" elapsed="0.020826"/>
+<status status="PASS" start="2025-12-02T14:12:06.081070" elapsed="0.034276"/>
 </kw>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
-<status status="PASS" start="2025-12-02T13:10:13.798075" elapsed="4.320837"/>
+<status status="PASS" start="2025-12-02T14:12:00.296785" elapsed="5.818782"/>
 </kw>
 <kw name="Click Button" owner="common">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${BUTTON}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-02T13:10:18.119881" elapsed="0.029316"/>
+<status status="PASS" start="2025-12-02T14:12:06.116757" elapsed="0.032056"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-02T13:10:18.149841" level="INFO">Clicking element 'xpath=//a[contains(text(), 'เข้าสู่ระบบ')]'.</msg>
+<msg time="2025-12-02T14:12:06.149423" level="INFO">Clicking element 'xpath=//a[contains(text(), 'เข้าสู่ระบบ')]'.</msg>
 <arg>${BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-02T13:10:18.149472" elapsed="0.083905"/>
+<status status="PASS" start="2025-12-02T14:12:06.149071" elapsed="0.080309"/>
 </kw>
 <arg>${GOTO_LOGINPAGE_BUTTON}</arg>
-<status status="PASS" start="2025-12-02T13:10:18.119358" elapsed="0.114300"/>
+<status status="PASS" start="2025-12-02T14:12:06.116126" elapsed="0.113562"/>
 </kw>
 <kw name="Switch Window" owner="SeleniumLibrary">
 <arg>NEW</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2025-12-02T13:10:18.234095" elapsed="0.012640"/>
+<status status="PASS" start="2025-12-02T14:12:06.230152" elapsed="0.032928"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${LOGIN_PAGE_HEADER}</arg>
 <arg>3s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-02T13:10:18.247268" elapsed="0.884858"/>
+<status status="PASS" start="2025-12-02T14:12:06.263735" elapsed="0.915199"/>
 </kw>
 <kw name="User Login" owner="login_test">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-12-02T13:10:19.133583" level="INFO">Typing text 'chitsutha@kku.ac.th' into text field 'xpath=//input[@id='username']'.</msg>
+<msg time="2025-12-02T14:12:07.180231" level="INFO">Typing text 'chitsutha@kku.ac.th' into text field 'xpath=//input[@id='username']'.</msg>
 <arg>${USERNAME_FIELD}</arg>
 <arg>${VALID_USER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-02T13:10:19.133157" elapsed="0.063090"/>
+<status status="PASS" start="2025-12-02T14:12:07.179844" elapsed="0.068469"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-12-02T13:10:19.197040" level="INFO">Typing password into text field 'xpath=//input[@id='password']'.</msg>
-<msg time="2025-12-02T13:10:19.219500" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-12-02T14:12:07.249187" level="INFO">Typing password into text field 'xpath=//input[@id='password']'.</msg>
+<msg time="2025-12-02T14:12:07.275202" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${PASSWORD_FIELD}</arg>
 <arg>${VALID_PASSWORD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-02T13:10:19.196561" elapsed="0.053835"/>
+<status status="PASS" start="2025-12-02T14:12:07.248674" elapsed="0.060755"/>
 </kw>
 <arg>${VALID_USER}</arg>
 <arg>${VAILD_PASSWORD}</arg>
-<status status="PASS" start="2025-12-02T13:10:19.132598" elapsed="0.117964"/>
+<status status="PASS" start="2025-12-02T14:12:07.179397" elapsed="0.130256"/>
 </kw>
 <kw name="Click Button" owner="common">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${BUTTON}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-02T13:10:19.251468" elapsed="0.018282"/>
+<status status="PASS" start="2025-12-02T14:12:07.310672" elapsed="0.018851"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-02T13:10:19.270325" level="INFO">Clicking element 'xpath=//button[contains(text(), 'เข้าสู่ระบบบัญชี')]'.</msg>
+<msg time="2025-12-02T14:12:07.330186" level="INFO">Clicking element 'xpath=//button[contains(text(), 'เข้าสู่ระบบบัญชี')]'.</msg>
 <arg>${BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-02T13:10:19.269993" elapsed="2.102389"/>
+<status status="PASS" start="2025-12-02T14:12:07.329813" elapsed="2.178660"/>
 </kw>
 <arg>${LOGIN}</arg>
-<status status="PASS" start="2025-12-02T13:10:19.250987" elapsed="2.121589"/>
+<status status="PASS" start="2025-12-02T14:12:07.310121" elapsed="2.198528"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${DASHBOARD_HEADER}</arg>
 <arg>3s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-02T13:10:21.372914" elapsed="0.014040"/>
+<status status="PASS" start="2025-12-02T14:12:09.508963" elapsed="0.013558"/>
 </kw>
 <kw name="Click Button" owner="common">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${BUTTON}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-02T13:10:21.388044" elapsed="0.017663"/>
+<status status="PASS" start="2025-12-02T14:12:09.523410" elapsed="0.015435"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-02T13:10:21.406504" level="INFO">Clicking element 'xpath=//span[contains(@class,'menu-title') and contains(text(),'โปรไฟล์ผู้ใช้')]'.</msg>
+<msg time="2025-12-02T14:12:09.539375" level="INFO">Clicking element 'xpath=//span[contains(@class,'menu-title') and contains(text(),'โปรไฟล์ผู้ใช้')]'.</msg>
 <arg>${BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-02T13:10:21.405987" elapsed="0.672162"/>
+<status status="PASS" start="2025-12-02T14:12:09.539064" elapsed="0.708445"/>
 </kw>
 <arg>${USER_PROFILE_MENU}</arg>
-<status status="PASS" start="2025-12-02T13:10:21.387485" elapsed="0.690930"/>
+<status status="PASS" start="2025-12-02T14:12:09.522977" elapsed="0.724727"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${ACCOUNT_MENU}</arg>
 <arg>3s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-02T13:10:22.078839" elapsed="0.016381"/>
+<status status="PASS" start="2025-12-02T14:12:10.248018" elapsed="0.017951"/>
 </kw>
 <kw name="Click Button" owner="common">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${BUTTON}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-02T13:10:22.096206" elapsed="0.015534"/>
+<status status="PASS" start="2025-12-02T14:12:10.266796" elapsed="0.014625"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-02T13:10:22.112353" level="INFO">Clicking element 'id=password-tab'.</msg>
+<msg time="2025-12-02T14:12:10.281970" level="INFO">Clicking element 'id=password-tab'.</msg>
 <arg>${BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-02T13:10:22.111998" elapsed="0.042237"/>
+<status status="PASS" start="2025-12-02T14:12:10.281646" elapsed="0.043126"/>
 </kw>
 <arg>${PASSWORD_MENU}</arg>
-<status status="PASS" start="2025-12-02T13:10:22.095795" elapsed="0.058625"/>
+<status status="PASS" start="2025-12-02T14:12:10.266415" elapsed="0.058531"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=password</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-02T13:10:22.154728" elapsed="0.012563"/>
+<status status="PASS" start="2025-12-02T14:12:10.325259" elapsed="0.013157"/>
 </kw>
 <kw name="Change Password" owner="changePass">
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-12-02T13:10:22.168370" level="INFO">Typing password into text field 'xpath=//input[@id='inputpassword']'.</msg>
-<msg time="2025-12-02T13:10:22.194805" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-12-02T14:12:10.339542" level="INFO">Typing password into text field 'xpath=//input[@id='inputpassword']'.</msg>
+<msg time="2025-12-02T14:12:10.366048" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${OLD_PASSWORD_FIELD}</arg>
 <arg>${OldPassword}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-02T13:10:22.168114" elapsed="0.059991"/>
+<status status="PASS" start="2025-12-02T14:12:10.339296" elapsed="0.059204"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-12-02T13:10:22.228835" level="INFO">Typing password into text field 'xpath=//input[@id='newpassword']'.</msg>
-<msg time="2025-12-02T13:10:22.252976" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-12-02T14:12:10.399143" level="INFO">Typing password into text field 'xpath=//input[@id='newpassword']'.</msg>
+<msg time="2025-12-02T14:12:10.422095" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${NEW_PASSWORD_FIELD}</arg>
 <arg>${NewPassword}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-02T13:10:22.228470" elapsed="0.058092"/>
+<status status="PASS" start="2025-12-02T14:12:10.398754" elapsed="0.056787"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-12-02T13:10:22.287196" level="INFO">Typing password into text field 'xpath=//input[@id='cnewpassword']'.</msg>
-<msg time="2025-12-02T13:10:22.309962" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-12-02T14:12:10.456322" level="INFO">Typing password into text field 'xpath=//input[@id='cnewpassword']'.</msg>
+<msg time="2025-12-02T14:12:10.480516" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${CONFIRM_PASSWORD_FIELD}</arg>
 <arg>${ConfirmPassword}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-02T13:10:22.286812" elapsed="0.054631"/>
+<status status="PASS" start="2025-12-02T14:12:10.455857" elapsed="0.055454"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<msg time="2025-12-02T14:12:20.695391" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-83.png"&gt;&lt;img src="selenium-screenshot-83.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-02T14:12:20.695698" level="FAIL">Element with locator 'xpath=//button[contains(text(),'btn btn-primary')]' not found.</msg>
 <arg>${UPDATE_BUTTON}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-02T13:10:22.341786" elapsed="0.020298"/>
+<status status="FAIL" start="2025-12-02T14:12:10.511539" elapsed="10.190309">Element with locator 'xpath=//button[contains(text(),'btn btn-primary')]' not found.</status>
 </kw>
 <kw name="Click Button" owner="common">
-<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
-<arg>${BUTTON}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-12-02T13:10:22.362966" elapsed="0.017209"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-12-02T13:10:22.381063" level="INFO">Clicking element 'xpath=//button[contains(text(),'อัปเดต')]'.</msg>
-<msg time="2025-12-02T13:10:22.484461" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-81.png"&gt;&lt;img src="selenium-screenshot-81.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-12-02T13:10:22.485127" level="FAIL">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6b516a235
-	0x7ff6b4ec2630
-	0x7ff6b4c514e5
-	0x7ff6b4cab833
-	0x7ff6b4c9d3a8
-	0x7ff6b4cd2b0a
-	0x7ff6b4c9cc36
-	0x7ff6b4cfbaba
-	0x7ff6b4c9b0ed
-	0x7ff6b4c9bf63
-	0x7ff6b5195d60
-	0x7ff6b518fe8a
-	0x7ff6b51b1005
-	0x7ff6b4edd71e
-	0x7ff6b4ee4e1f
-	0x7ff6b4ecb7c4
-	0x7ff6b4ecb97f
-	0x7ff6b4eb18e8
-	0x7ffa7cd9e8d7
-	0x7ffa7e9cc53c
-</msg>
-<arg>${BUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-12-02T13:10:22.380573" elapsed="0.111604">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6b516a235
-	0x7ff6b4ec2630
-	0x7ff6b4c514e5
-	0x7ff6b4cab833
-	0x7ff6b4c9d3a8
-	0x7ff6b4cd2b0a
-	0x7ff6b4c9cc36
-	0x7ff6b4cfbaba
-	0x7ff6b4c9b0ed
-	0x7ff6b4c9bf63
-	0x7ff6b5195d60
-	0x7ff6b518fe8a
-	0x7ff6b51b1005
-	0x7ff6b4edd71e
-	0x7ff6b4ee4e1f
-	0x7ff6b4ecb7c4
-	0x7ff6b4ecb97f
-	0x7ff6b4eb18e8
-	0x7ffa7cd9e8d7
-	0x7ffa7e9cc53c
-</status>
-</kw>
 <arg>${UPDATE_BUTTON}</arg>
-<status status="FAIL" start="2025-12-02T13:10:22.362448" elapsed="0.130058">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6b516a235
-	0x7ff6b4ec2630
-	0x7ff6b4c514e5
-	0x7ff6b4cab833
-	0x7ff6b4c9d3a8
-	0x7ff6b4cd2b0a
-	0x7ff6b4c9cc36
-	0x7ff6b4cfbaba
-	0x7ff6b4c9b0ed
-	0x7ff6b4c9bf63
-	0x7ff6b5195d60
-	0x7ff6b518fe8a
-	0x7ff6b51b1005
-	0x7ff6b4edd71e
-	0x7ff6b4ee4e1f
-	0x7ff6b4ecb7c4
-	0x7ff6b4ecb97f
-	0x7ff6b4eb18e8
-	0x7ffa7cd9e8d7
-	0x7ffa7e9cc53c
-</status>
+<status status="NOT RUN" start="2025-12-02T14:12:20.702135" elapsed="0.000121"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${CONFIRM_BUTTON}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="NOT RUN" start="2025-12-02T13:10:22.492709" elapsed="0.000118"/>
+<status status="NOT RUN" start="2025-12-02T14:12:20.702383" elapsed="0.000082"/>
 </kw>
 <kw name="Click Button" owner="common">
 <arg>${CONFIRM_BUTTON}</arg>
-<status status="NOT RUN" start="2025-12-02T13:10:22.493008" elapsed="0.000091"/>
+<status status="NOT RUN" start="2025-12-02T14:12:20.702595" elapsed="0.000090"/>
 </kw>
 <arg>${VAILD_PASSWORD}</arg>
 <arg>${NEW_PASSWORD}</arg>
 <arg>${NEW_PASSWORD}</arg>
-<status status="FAIL" start="2025-12-02T13:10:22.167680" elapsed="0.325532">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6b516a235
-	0x7ff6b4ec2630
-	0x7ff6b4c514e5
-	0x7ff6b4cab833
-	0x7ff6b4c9d3a8
-	0x7ff6b4cd2b0a
-	0x7ff6b4c9cc36
-	0x7ff6b4cfbaba
-	0x7ff6b4c9b0ed
-	0x7ff6b4c9bf63
-	0x7ff6b5195d60
-	0x7ff6b518fe8a
-	0x7ff6b51b1005
-	0x7ff6b4edd71e
-	0x7ff6b4ee4e1f
-	0x7ff6b4ecb7c4
-	0x7ff6b4ecb97f
-	0x7ff6b4eb18e8
-	0x7ffa7cd9e8d7
-	0x7ffa7e9cc53c
-</status>
+<status status="FAIL" start="2025-12-02T14:12:10.338863" elapsed="10.363975">Element with locator 'xpath=//button[contains(text(),'btn btn-primary')]' not found.</status>
 </kw>
 <kw name="Change Password Back to Defult" owner="changePass">
-<status status="NOT RUN" start="2025-12-02T13:10:22.493525" elapsed="0.000196"/>
+<status status="NOT RUN" start="2025-12-02T14:12:20.703191" elapsed="0.000145"/>
 </kw>
 <kw name="Close Window" owner="common" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-12-02T13:10:22.567662" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-82.png"&gt;&lt;img src="selenium-screenshot-82.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-02T14:12:20.773867" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-84.png"&gt;&lt;img src="selenium-screenshot-84.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-12-02T13:10:22.494384" elapsed="0.073756"/>
+<status status="PASS" start="2025-12-02T14:12:20.704135" elapsed="0.070057"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-02T13:10:22.568359" elapsed="2.110851"/>
+<status status="PASS" start="2025-12-02T14:12:20.774474" elapsed="2.164248"/>
 </kw>
-<status status="PASS" start="2025-12-02T13:10:22.494102" elapsed="2.185369"/>
+<status status="PASS" start="2025-12-02T14:12:20.703709" elapsed="2.235280"/>
 </kw>
 <doc>ทดสอบการตรวจสอบเปลี่ยนรหัสผ่านผู้ใช้</doc>
-<status status="FAIL" start="2025-12-02T13:10:13.795118" elapsed="10.884645">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=142.0.7444.176); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6b516a235
-	0x7ff6b4ec2630
-	0x7ff6b4c514e5
-	0x7ff6b4cab833
-	0x7ff6b4c9d3a8
-	0x7ff6b4cd2b0a
-	0x7ff6b4c9cc36
-	0x7ff6b4cfbaba
-	0x7ff6b4c9b0ed
-	0x7ff6b4c9bf63
-	0x7ff6b5195d60
-	0x7ff6b518fe8a
-	0x7ff6b51b1005
-	0x7ff6b4edd71e
-	0x7ff6b4ee4e1f
-	0x7ff6b4ecb7c4
-	0x7ff6b4ecb97f
-	0x7ff6b4eb18e8
-	0x7ffa7cd9e8d7
-	0x7ffa7e9cc53c
-</status>
+<status status="FAIL" start="2025-12-02T14:12:00.293956" elapsed="22.645373">Element with locator 'xpath=//button[contains(text(),'btn btn-primary')]' not found.</status>
 </test>
 <doc>ทดสอบการเปลี่ยนรหัสผ่านผู้ใช้</doc>
-<status status="FAIL" start="2025-12-02T13:10:13.617547" elapsed="11.072539"/>
+<status status="FAIL" start="2025-12-02T14:12:00.097667" elapsed="22.849302"/>
 </suite>
-<status status="FAIL" start="2025-12-02T13:10:13.614753" elapsed="11.082886"/>
+<status status="FAIL" start="2025-12-02T14:12:00.094801" elapsed="22.855607"/>
 </suite>
-<status status="FAIL" start="2025-12-02T13:10:13.592888" elapsed="11.109351"/>
+<status status="FAIL" start="2025-12-02T14:12:00.072961" elapsed="22.879867"/>
 </suite>
 <statistics>
 <total>
