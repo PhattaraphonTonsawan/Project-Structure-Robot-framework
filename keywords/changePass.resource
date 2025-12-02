@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    ../variables/global.resource
+Resource    ../resources/global.resource
 
 *** Keywords ***
 Change Password

@@ -8,6 +8,7 @@ Open Webpage
     Maximize Browser Window
 Click Button
     [Arguments]    ${BUTTON}
+    Wait Until Element Is Enabled    ${BUTTON}
     Click Element    ${BUTTON}
 Close Window
     Capture Page Screenshot
