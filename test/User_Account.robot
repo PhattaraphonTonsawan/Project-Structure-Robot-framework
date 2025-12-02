@@ -1,11 +1,11 @@
 *** Settings ***
 Documentation     ทดสอบการตรวจสอบโปรไฟล์ผู้ใช้
 Library           SeleniumLibrary
-Resource          ../resources/common.resource
-Resource          ../variables/global.resource
-Resource          ../resources/login_test.resource
-Resource          ../variables/UserProfile.resource
-Resource          ../variables/login.resource
+Resource          ../keywords/common.resource
+Resource          ../resources/global.resource
+Resource          ../keywords/login_test.resource
+Resource          ../resources/UserProfile.resource
+Resource          ../resources/login.resource
 
 *** Test Cases ***
 Show User Profile
