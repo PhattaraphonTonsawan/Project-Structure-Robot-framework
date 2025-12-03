@@ -1,6 +1,6 @@
-VALID_USER :     chitsutha@kku.ac.th
-VAILD_PASSWORD :    123456789
-INVAILD_USERNAME :     praisan@kku.ac.th
-INVAILD_PASSWORD :     1234
-VAILD_PASSWORD2 :    987654321
+username_data :     chitsutha@kku.ac.th
+password_data :    123456789
+invaild_username_data :     praisan@kku.ac.th
+invaild_password_data :     1234
+changed_password :    987654321
 

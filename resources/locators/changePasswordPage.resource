@@ -1,10 +1,8 @@
 *** Variables ***
 &{changePasswordPage}
-...    PASSWORD_MENU=id=password-tab
-...    OLD_PASSWORD_FIELD=xpath=//input[@id='inputpassword']
-...    NEW_PASSWORD_FIELD=xpath=//input[@id='newpassword']
-...    CONFIRM_PASSWORD_FIELD=xpath=//input[@id='cnewpassword']
-...    CONFIRM_BUTTON=xpath=//button[contains(text(), 'ตกลง')]
-...    UPDATE_BUTTON=xpath=//div[@id='password']//button[contains(@class,'btn btn-primary')]
-
-
+...    password_menu=id=password-tab
+...    old_password_field=xpath=//input[@id='inputpassword']
+...    new_password_field=xpath=//input[@id='newpassword']
+...    confirm_password_field=xpath=//input[@id='cnewpassword']
+...    confirm_button=xpath=//button[contains(text(), 'ตกลง')]
+...    update_button=xpath=//div[@id='password']//button[contains(@class,'btn btn-primary')]

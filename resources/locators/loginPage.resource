@@ -1,8 +1,8 @@
 *** Variables ***
 &{LoginPage}
-...    GOTO_LOGINPAGE_BUTTON=xpath=//a[contains(text(),'เข้าสู่ระบบ')]
-...    LOGIN=xpath=//button[contains(text(),'เข้าสู่ระบบบัญชี')]
-...    USERNAME_FIELD=xpath=//input[@id='username']
-...    PASSWORD_FIELD=xpath=//input[@id='password']
-...    LOGIN_PAGE_HEADER=xpath=//h1[contains(text(),'เข้าสู่ระบบบัญชี')]
-...    LOGIN_ALERT=xpath=//div[contains(@class,'alert alert-danger alert-block')]
+...    go_to_login_page_btn=xpath=//a[contains(text(),'เข้าสู่ระบบ')]
+...    login_btn=xpath=//button[contains(text(),'เข้าสู่ระบบบัญชี')]
+...    username_field=xpath=//input[@id='username']
+...    password_field=xpath=//input[@id='password']
+...    login_page_header=xpath=//h1[contains(text(),'เข้าสู่ระบบบัญชี')]
+...    login_alert=xpath=//div[contains(@class,'alert alert-danger alert-block')]
